@@ -1,0 +1,27 @@
+package com.ezen.test.controller;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+@Controller
+@RequiredArgsConstructor
+@RequestMapping("/comment/*")
+public class CommentController {
+
+	// ResponseEntity 객체 사용 : body내용 + httpStatus 상태
+	// @requestBpdy : body값 추출
+	// consumes : @RequestBody에서 가져오는 데이터의 형태
+	// produces : 보내는 데이터의 형식 / 나가는 타입 : MediaType
+	// json : application/json / text : text_plain
+	
+	@PostMapping("/post")
+	public ResponseEntity<String> post(){
+		
+	}
+}

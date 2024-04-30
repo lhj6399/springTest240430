@@ -1,0 +1,8 @@
+package com.ezen.test.service;
+
+import com.ezen.test.repository.CommentDAO;
+
+public class CommetServiceImpl implements CommentService{
+
+	private final CommentDAO cdao;
+}
